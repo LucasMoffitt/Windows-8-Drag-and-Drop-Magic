@@ -1,4 +1,8 @@
-Windows-8-Drag-and-Drop-Magic
+Windows 8, Drag and Drop Magic
 =============================
 
-Fun stuff with windows 8 drag and drop in both touch and click.
+A demo built on Windows 8 using XAML and C#.
+
+Shows you how to enable bound list and list item location manipulation.
+
+Any questions please contact at LucasMoffitt@Gmail.com

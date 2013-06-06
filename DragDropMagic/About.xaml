@@ -135,7 +135,9 @@
 
                     <StackPanel x:Name="FlyoutContent">
                         <TextBlock FontWeight="Bold" Text="About This Demo:" Foreground="Black" TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left"/>
-                        <TextBlock Text="Derp" TextWrapping="Wrap" Foreground="Black" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left" Margin="0,0,0,10"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="Black" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left" Margin="0,0,0,10" Text="This demo was built by Lucas Moffitt to show the steps involved with dragging and dropping unknown lists and list items between lists. You can find him at:"/>
+                        <TextBlock Foreground="Black" Style="{StaticResource BasicTextStyle}" Text="www.LucasMoffitt.com" FontWeight="Bold"/>
+                        <TextBlock Foreground="Black" Style="{StaticResource BasicTextStyle}" Text="LucasMoffitt@Gmail.com" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
             </ScrollViewer>
