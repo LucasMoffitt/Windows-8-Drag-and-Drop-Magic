@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LUCAS-LAPTOP</Machine>
+    <WindowsUser>Lucas</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>72F19D20CD351699A7BEF1EFCC638B1E1E76A2C45BAEAFDEB2F88DC8E5DC55CF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a5294484-791e-4b2f-a732-70d74a2f679f_1.0.0.0_neutral__m0we3rjtmsxmt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a5294484-791e-4b2f-a732-70d74a2f679f_m0we3rjtmsxmt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a5294484-791e-4b2f-a732-70d74a2f679f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Lucas</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-06-06T00:51:55.540</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\DragDropMagic.exe">
+      <PackagePath>DragDropMagic.exe</PackagePath>
+      <Modified>2013-06-06T04:39:54.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\DragDropMagic.pdb">
+      <PackagePath>DragDropMagic.pdb</PackagePath>
+      <Modified>2013-06-06T04:39:53.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T10:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T10:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T10:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T10:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2013-06-05T04:03:46.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-06-05T04:41:42.554</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2013-06-06T00:43:31.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\Main.xaml">
+      <PackagePath>Main.xaml</PackagePath>
+      <Modified>2013-06-06T04:13:54.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\About.xaml">
+      <PackagePath>About.xaml</PackagePath>
+      <Modified>2013-06-06T00:47:40.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Documents\GitHub\Windows-8-Drag-and-Drop-Magic\DragDropMagic\DragDropMagic\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-06-06T00:51:55.325</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
