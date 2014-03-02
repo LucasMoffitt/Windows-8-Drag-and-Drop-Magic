@@ -9,13 +9,11 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Media.Animation;
 
-
 namespace DragDropMagic
 {
     sealed partial class App : Application
     {
-
-        private Rect windowBounds;
+        private Rect _windowBounds;
         private double aboutWidth = 346;
         private Popup settingsScreenPopup;
 
@@ -64,14 +62,14 @@ namespace DragDropMagic
 
         void OnWindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
-            windowBounds = Window.Current.Bounds;
+            _windowBounds = Window.Current.Bounds;
         }
 
         protected override void OnWindowCreated(WindowCreatedEventArgs args)
         {
             base.OnWindowCreated(args);
 
-            windowBounds = Window.Current.Bounds;
+            _windowBounds = Window.Current.Bounds;
             Window.Current.SizeChanged += OnWindowSizeChanged;
             SettingsPane.GetForCurrentView().CommandsRequested += onCommandsRequested;
         }
@@ -92,7 +90,7 @@ namespace DragDropMagic
             Window.Current.Activated += OnWindowActivated;
             settingsScreenPopup.IsLightDismissEnabled = true;
             settingsScreenPopup.Width = aboutWidth;
-            settingsScreenPopup.Height = windowBounds.Height;
+            settingsScreenPopup.Height = _windowBounds.Height;
 
             settingsScreenPopup.ChildTransitions = new TransitionCollection();
             settingsScreenPopup.ChildTransitions.Add(new PaneThemeTransition()
@@ -107,9 +105,9 @@ namespace DragDropMagic
                 About aboutPane = new About();
 
                 aboutPane.Width = aboutWidth;
-                aboutPane.Height = windowBounds.Height;
+                aboutPane.Height = _windowBounds.Height;
                 settingsScreenPopup.Child = aboutPane;
-                settingsScreenPopup.SetValue(Canvas.LeftProperty, SettingsPane.Edge == SettingsEdgeLocation.Right ? (windowBounds.Width - aboutWidth) : 0);
+                settingsScreenPopup.SetValue(Canvas.LeftProperty, SettingsPane.Edge == SettingsEdgeLocation.Right ? (_windowBounds.Width - aboutWidth) : 0);
             }
 
             settingsScreenPopup.SetValue(Canvas.TopProperty, 0);

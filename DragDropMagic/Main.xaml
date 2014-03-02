@@ -10,7 +10,6 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-
         <DataTemplate x:Key="SubListItem">
             <TextBox Text="{Binding Item, Mode=TwoWay}" Tag="{Binding}" Margin="5,5,10,5" BorderThickness="0" Width="Auto" AcceptsReturn="True" HorizontalAlignment="Stretch" TextWrapping="Wrap" Foreground="Black" />
         </DataTemplate>
@@ -28,7 +27,6 @@
                         <ColumnDefinition Width="80"/>
                     </Grid.ColumnDefinitions>
                     <TextBox Grid.Column="0" Margin="10,10,0,0"  Background="Transparent" TextWrapping="Wrap" FontSize="30" BorderThickness="0" Foreground="Black" Width="auto" VerticalAlignment="Stretch" Text="{Binding ListHeader, Mode=TwoWay}" HorizontalAlignment="Stretch" FontFamily="Segoe UI" />
-                    
                 </Grid>
                 <ListView x:Name="SubListItems" 
                           Height="auto" 
@@ -51,8 +49,8 @@
                           Drop="SubListItems_Drop" 
                           DragOver="SubListItems_DragOver" 
                           />
-                <Grid Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" >
-                    <Button x:Name="btnNewSubListItem" Style="{StaticResource AddAppBarButtonStyle}" AutomationProperties.Name="Add Sub List Item" Tag="{Binding}" Click="btnNewSubListItem_Click" />
+                <Grid Grid.Row="2" Background="DarkGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                    <Button x:Name="btnNewSubListItem" Style="{StaticResource AddAppBarButtonStyle}" HorizontalAlignment="Center" AutomationProperties.Name="Add Sub List Item" Tag="{Binding}" Click="btnNewSubListItem_Click" />
                 </Grid>
             </Grid>
         </DataTemplate>
@@ -98,8 +96,7 @@
         </Grid>
         
         <Grid Row="1" Background="White">
-            <ListView x:Name="MainObjectList"
-                      Height="Auto" 
+            <ListView Height="Auto" 
                       Width="Auto"
                       ItemTemplate="{StaticResource MyListItem}"
                       ItemsSource="{Binding MyListItems, Mode=TwoWay}"
@@ -117,27 +114,15 @@
                       ScrollViewer.ZoomMode="Disabled">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <StackPanel Orientation="Horizontal" />
+                        <VirtualizingStackPanel Orientation="Horizontal" />
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
             </ListView>
         </Grid>
-
-        <VisualStateManager.VisualStateGroups>
-
-            <!-- Visual states reflect the application's view state -->
-            <VisualStateGroup x:Name="ApplicationViewStates">
-                <VisualState x:Name="FullScreenLandscape"/>
-                <VisualState x:Name="Filled"/>
-
-                <VisualState x:Name="FullScreenPortrait">
-                 
-                </VisualState>
-
-                <VisualState x:Name="Snapped">
-                   
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
     </Grid>
 </common:LayoutAwarePage>
